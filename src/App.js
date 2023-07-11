@@ -4,6 +4,7 @@ import { Protected } from './components/Protected';
 import { RequireAuth } from './RequireAuth';
 import { Login } from './components/Login';
 import { ProtectedSecond } from './components/ProtectSecond';
+import { ProtectedThird } from './components/ProtectedThird';
 import { Home } from './components/Home';
 import { Layout } from './components/Layout';
 
@@ -30,6 +31,14 @@ function MyRoutes() {
             element={
               <RequireAuth>
                 <ProtectedSecond />
+              </RequireAuth>
+            }
+          />
+          <Route
+            path="/protected3"
+            element={
+              <RequireAuth>
+                <ProtectedThird />
               </RequireAuth>
             }
           />

@@ -4,6 +4,6 @@ export function ProtectedSecond() {
   const { route } = useAuthenticator((context) => [context.route]);
 
   const message =
-    route === 'authenticated' ? 'SECOND PROTECTED ROUTE!' : 'Loading...';
+    route === 'authenticated' ? 'ADMIN PAGE!' : 'Loading...';
   return <Heading level={1}>{message}</Heading>;
 }
